@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{46E7E6BE-992E-4B5F-8BDC-E8C0C746B711}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>MFCInsole</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="MFCInsole.h" />
+    <ClInclude Include="MFCInsoleDlg.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MFCInsole.cpp" />
+    <ClCompile Include="MFCInsoleDlg.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCInsole.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MFCInsole.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\1.bmp" />
+    <Image Include="..\..\..\..\Downloads\1A.bmp" />
+    <Image Include="..\..\..\..\Downloads\2.bmp" />
+    <Image Include="..\..\..\..\Downloads\2A.bmp" />
+    <Image Include="..\imBPM\1.bmp" />
+    <Image Include="..\imBPM\10.bmp" />
+    <Image Include="..\imBPM\10A.bmp" />
+    <Image Include="..\imBPM\10b.bmp" />
+    <Image Include="..\imBPM\10c.bmp" />
+    <Image Include="..\imBPM\10d.bmp" />
+    <Image Include="..\imBPM\10e.bmp" />
+    <Image Include="..\imBPM\11.bmp" />
+    <Image Include="..\imBPM\11A.bmp" />
+    <Image Include="..\imBPM\11b.bmp" />
+    <Image Include="..\imBPM\11c.bmp" />
+    <Image Include="..\imBPM\11d.bmp" />
+    <Image Include="..\imBPM\11e.bmp" />
+    <Image Include="..\imBPM\12.bmp" />
+    <Image Include="..\imBPM\12A.bmp" />
+    <Image Include="..\imBPM\12b.bmp" />
+    <Image Include="..\imBPM\12c.bmp" />
+    <Image Include="..\imBPM\12d.bmp" />
+    <Image Include="..\imBPM\12e.bmp" />
+    <Image Include="..\imBPM\13.bmp" />
+    <Image Include="..\imBPM\13A.bmp" />
+    <Image Include="..\imBPM\13b.bmp" />
+    <Image Include="..\imBPM\13c.bmp" />
+    <Image Include="..\imBPM\13d.bmp" />
+    <Image Include="..\imBPM\13e.bmp" />
+    <Image Include="..\imBPM\14.bmp" />
+    <Image Include="..\imBPM\14A.bmp" />
+    <Image Include="..\imBPM\14b.bmp" />
+    <Image Include="..\imBPM\14c.bmp" />
+    <Image Include="..\imBPM\14d.bmp" />
+    <Image Include="..\imBPM\14e.bmp" />
+    <Image Include="..\imBPM\15.bmp" />
+    <Image Include="..\imBPM\15A.bmp" />
+    <Image Include="..\imBPM\15b.bmp" />
+    <Image Include="..\imBPM\15c.bmp" />
+    <Image Include="..\imBPM\15d.bmp" />
+    <Image Include="..\imBPM\15e.bmp" />
+    <Image Include="..\imBPM\16.bmp" />
+    <Image Include="..\imBPM\16A.bmp" />
+    <Image Include="..\imBPM\16b.bmp" />
+    <Image Include="..\imBPM\16c.bmp" />
+    <Image Include="..\imBPM\16d.bmp" />
+    <Image Include="..\imBPM\16e.bmp" />
+    <Image Include="..\imBPM\17.bmp" />
+    <Image Include="..\imBPM\17A.bmp" />
+    <Image Include="..\imBPM\17b.bmp" />
+    <Image Include="..\imBPM\17c.bmp" />
+    <Image Include="..\imBPM\17d.bmp" />
+    <Image Include="..\imBPM\17e.bmp" />
+    <Image Include="..\imBPM\18.bmp" />
+    <Image Include="..\imBPM\18A.bmp" />
+    <Image Include="..\imBPM\18b.bmp" />
+    <Image Include="..\imBPM\18c.bmp" />
+    <Image Include="..\imBPM\18d.bmp" />
+    <Image Include="..\imBPM\18e.bmp" />
+    <Image Include="..\imBPM\19.bmp" />
+    <Image Include="..\imBPM\19a.bmp" />
+    <Image Include="..\imBPM\19b.bmp" />
+    <Image Include="..\imBPM\19c.bmp" />
+    <Image Include="..\imBPM\19d.bmp" />
+    <Image Include="..\imBPM\19e.bmp" />
+    <Image Include="..\imBPM\1A.bmp" />
+    <Image Include="..\imBPM\1b.bmp" />
+    <Image Include="..\imBPM\1c.bmp" />
+    <Image Include="..\imBPM\1d.bmp" />
+    <Image Include="..\imBPM\1e.bmp" />
+    <Image Include="..\imBPM\2.bmp" />
+    <Image Include="..\imBPM\20.bmp" />
+    <Image Include="..\imBPM\20a.bmp" />
+    <Image Include="..\imBPM\20b.bmp" />
+    <Image Include="..\imBPM\20c.bmp" />
+    <Image Include="..\imBPM\20d.bmp" />
+    <Image Include="..\imBPM\20e.bmp" />
+    <Image Include="..\imBPM\21.bmp" />
+    <Image Include="..\imBPM\21a.bmp" />
+    <Image Include="..\imBPM\21b.bmp" />
+    <Image Include="..\imBPM\21c.bmp" />
+    <Image Include="..\imBPM\21d.bmp" />
+    <Image Include="..\imBPM\21e.bmp" />
+    <Image Include="..\imBPM\22.bmp" />
+    <Image Include="..\imBPM\22a.bmp" />
+    <Image Include="..\imBPM\22b.bmp" />
+    <Image Include="..\imBPM\22c.bmp" />
+    <Image Include="..\imBPM\22d.bmp" />
+    <Image Include="..\imBPM\22e.bmp" />
+    <Image Include="..\imBPM\23.bmp" />
+    <Image Include="..\imBPM\23a.bmp" />
+    <Image Include="..\imBPM\23b.bmp" />
+    <Image Include="..\imBPM\23c.bmp" />
+    <Image Include="..\imBPM\23d.bmp" />
+    <Image Include="..\imBPM\23e.bmp" />
+    <Image Include="..\imBPM\24.bmp" />
+    <Image Include="..\imBPM\24a.bmp" />
+    <Image Include="..\imBPM\24b.bmp" />
+    <Image Include="..\imBPM\24c.bmp" />
+    <Image Include="..\imBPM\24d.bmp" />
+    <Image Include="..\imBPM\24e.bmp" />
+    <Image Include="..\imBPM\25.bmp" />
+    <Image Include="..\imBPM\25a.bmp" />
+    <Image Include="..\imBPM\25b.bmp" />
+    <Image Include="..\imBPM\25c.bmp" />
+    <Image Include="..\imBPM\25d.bmp" />
+    <Image Include="..\imBPM\25e.bmp" />
+    <Image Include="..\imBPM\26.bmp" />
+    <Image Include="..\imBPM\26a.bmp" />
+    <Image Include="..\imBPM\26b.bmp" />
+    <Image Include="..\imBPM\26c.bmp" />
+    <Image Include="..\imBPM\26d.bmp" />
+    <Image Include="..\imBPM\26e.bmp" />
+    <Image Include="..\imBPM\27.bmp" />
+    <Image Include="..\imBPM\27a.bmp" />
+    <Image Include="..\imBPM\27b.bmp" />
+    <Image Include="..\imBPM\27c.bmp" />
+    <Image Include="..\imBPM\27d.bmp" />
+    <Image Include="..\imBPM\27e.bmp" />
+    <Image Include="..\imBPM\28.bmp" />
+    <Image Include="..\imBPM\28a.bmp" />
+    <Image Include="..\imBPM\28b.bmp" />
+    <Image Include="..\imBPM\28c.bmp" />
+    <Image Include="..\imBPM\28d.bmp" />
+    <Image Include="..\imBPM\28e.bmp" />
+    <Image Include="..\imBPM\29.bmp" />
+    <Image Include="..\imBPM\29a.bmp" />
+    <Image Include="..\imBPM\29b.bmp" />
+    <Image Include="..\imBPM\29c.bmp" />
+    <Image Include="..\imBPM\29d.bmp" />
+    <Image Include="..\imBPM\29e.bmp" />
+    <Image Include="..\imBPM\2A.bmp" />
+    <Image Include="..\imBPM\2b.bmp" />
+    <Image Include="..\imBPM\2c.bmp" />
+    <Image Include="..\imBPM\2d.bmp" />
+    <Image Include="..\imBPM\2e.bmp" />
+    <Image Include="..\imBPM\3.bmp" />
+    <Image Include="..\imBPM\30.bmp" />
+    <Image Include="..\imBPM\30a.bmp" />
+    <Image Include="..\imBPM\30b.bmp" />
+    <Image Include="..\imBPM\30c.bmp" />
+    <Image Include="..\imBPM\30d.bmp" />
+    <Image Include="..\imBPM\30e.bmp" />
+    <Image Include="..\imBPM\31.bmp" />
+    <Image Include="..\imBPM\31a.bmp" />
+    <Image Include="..\imBPM\31b.bmp" />
+    <Image Include="..\imBPM\31c.bmp" />
+    <Image Include="..\imBPM\31d.bmp" />
+    <Image Include="..\imBPM\31e.bmp" />
+    <Image Include="..\imBPM\32.bmp" />
+    <Image Include="..\imBPM\32a.bmp" />
+    <Image Include="..\imBPM\32b.bmp" />
+    <Image Include="..\imBPM\32c.bmp" />
+    <Image Include="..\imBPM\32d.bmp" />
+    <Image Include="..\imBPM\32e.bmp" />
+    <Image Include="..\imBPM\33.bmp" />
+    <Image Include="..\imBPM\33a.bmp" />
+    <Image Include="..\imBPM\33b.bmp" />
+    <Image Include="..\imBPM\33c.bmp" />
+    <Image Include="..\imBPM\33d.bmp" />
+    <Image Include="..\imBPM\33e.bmp" />
+    <Image Include="..\imBPM\34.bmp" />
+    <Image Include="..\imBPM\34a.bmp" />
+    <Image Include="..\imBPM\34b.bmp" />
+    <Image Include="..\imBPM\34c.bmp" />
+    <Image Include="..\imBPM\34d.bmp" />
+    <Image Include="..\imBPM\34e.bmp" />
+    <Image Include="..\imBPM\35.bmp" />
+    <Image Include="..\imBPM\35a.bmp" />
+    <Image Include="..\imBPM\35b.bmp" />
+    <Image Include="..\imBPM\35c.bmp" />
+    <Image Include="..\imBPM\35d.bmp" />
+    <Image Include="..\imBPM\35e.bmp" />
+    <Image Include="..\imBPM\36.bmp" />
+    <Image Include="..\imBPM\36a.bmp" />
+    <Image Include="..\imBPM\36b.bmp" />
+    <Image Include="..\imBPM\36c.bmp" />
+    <Image Include="..\imBPM\36d.bmp" />
+    <Image Include="..\imBPM\36e.bmp" />
+    <Image Include="..\imBPM\3A.bmp" />
+    <Image Include="..\imBPM\3b.bmp" />
+    <Image Include="..\imBPM\3c.bmp" />
+    <Image Include="..\imBPM\3d.bmp" />
+    <Image Include="..\imBPM\3e.bmp" />
+    <Image Include="..\imBPM\4.bmp" />
+    <Image Include="..\imBPM\4A.bmp" />
+    <Image Include="..\imBPM\4b.bmp" />
+    <Image Include="..\imBPM\4c.bmp" />
+    <Image Include="..\imBPM\4d.bmp" />
+    <Image Include="..\imBPM\4e.bmp" />
+    <Image Include="..\imBPM\5.bmp" />
+    <Image Include="..\imBPM\5A.bmp" />
+    <Image Include="..\imBPM\5b.bmp" />
+    <Image Include="..\imBPM\5c.bmp" />
+    <Image Include="..\imBPM\5d.bmp" />
+    <Image Include="..\imBPM\5e.bmp" />
+    <Image Include="..\imBPM\6.bmp" />
+    <Image Include="..\imBPM\6A.bmp" />
+    <Image Include="..\imBPM\6b.bmp" />
+    <Image Include="..\imBPM\6c.bmp" />
+    <Image Include="..\imBPM\6d.bmp" />
+    <Image Include="..\imBPM\6e.bmp" />
+    <Image Include="..\imBPM\7.bmp" />
+    <Image Include="..\imBPM\7A.bmp" />
+    <Image Include="..\imBPM\7b.bmp" />
+    <Image Include="..\imBPM\7c.bmp" />
+    <Image Include="..\imBPM\7d.bmp" />
+    <Image Include="..\imBPM\7e.bmp" />
+    <Image Include="..\imBPM\8.bmp" />
+    <Image Include="..\imBPM\8A.bmp" />
+    <Image Include="..\imBPM\8b.bmp" />
+    <Image Include="..\imBPM\8c.bmp" />
+    <Image Include="..\imBPM\8d.bmp" />
+    <Image Include="..\imBPM\8e.bmp" />
+    <Image Include="..\imBPM\9.bmp" />
+    <Image Include="..\imBPM\9A.bmp" />
+    <Image Include="..\imBPM\9b.bmp" />
+    <Image Include="..\imBPM\9c.bmp" />
+    <Image Include="..\imBPM\9d.bmp" />
+    <Image Include="..\imBPM\9e.bmp" />
+    <Image Include="..\imbpm\bitmap19.bmp" />
+    <Image Include="..\imbpm\bitmap27.bmp" />
+    <Image Include="res\MFCInsole.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
